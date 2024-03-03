@@ -4,7 +4,9 @@ import BoardComponent from '../components/BoardComponent';
 import {useNavigate, useParams} from 'react-router-dom'
 import ActionsInfo from '../components/ActionsInfo';
 
-const wss = new WebSocket('ws://localhost:5000')
+// const wss = new WebSocket('ws://localhost:5000')
+const wss = new WebSocket('ws://render.com/docs/web-services#port-detection')
+
 
 export default function GamePage() {
   const [myBoard, setMyBoard] = useState(new Board());
